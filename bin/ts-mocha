@@ -5,9 +5,11 @@
 var path = require('path');
 var spawn = require('child_process').spawn;
 
+// 获取 mocha 地址
 var MOCHA_PATH = require.resolve('mocha/bin/mocha');
 var args = [
   MOCHA_PATH,
+  // -r 
   '-r',
   path.join(__dirname, '../src/index.js'),
 ];
